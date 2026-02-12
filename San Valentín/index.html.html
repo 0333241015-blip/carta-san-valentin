@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta Especial 💌</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    background:#f5d9e2;
+    overflow-x:hidden;
+}
+
+/* Pantallas */
+.pantalla{
+    display:none;
+    padding:40px 20px;
+    position:relative;
+    z-index:2;
+}
+
+.activa{
+    display:block;
+}
+
+/* Hoja A4 */
+.hoja{
+    background:white;
+    width:210mm;
+    max-width:90%;
+    min-height:297mm;
+    margin:auto;
+    padding:40px;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+    border-radius:8px;
+    position:relative;
+}
+
+/* Botones */
+button{
+    padding:15px 40px;
+    font-size:20px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    margin:10px;
+}
+
+#si{
+    background:#ff4d88;
+    color:white;
+}
+
+#no{
+    background:#666;
+    color:white;
+}
+
+/* Sobre */
+.sobre{
+    font-size:100px;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.abrir{
+    animation:abrirSobre 1s forwards;
+}
+
+@keyframes abrirSobre{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2) rotate(10deg);}
+    100%{transform:scale(0);opacity:0;}
+}
+
+/* Scroll mensaje */
+.mensaje{
+    max-height:350px;
+    overflow-y:auto;
+    font-size:18px;
+    text-align:justify;
+}
+
+/* Imagen */
+.imagen-romantica{
+    margin-top:30px;
+}
+
+.imagen-romantica img{
+    width:350px;
+    border-radius:20px;
+}
+
+/* Decoración flotante */
+.elemento{
+    position:fixed;
+    z-index:1;
+    pointer-events:none;
+}
+
+/* TE AMO */
+#teamo{
+    font-size:40px;
+    margin-top:30px;
+    color:#ff2e63;
+    font-weight:bold;
+    height:50px;
+}
+
+/* Corazones explosión */
+.explosion{
+    position:fixed;
+    font-size:30px;
+    animation:explode 1s ease-out forwards;
+}
+
+@keyframes explode{
+    0%{transform:translate(0,0);opacity:1;}
+    100%{transform:translate(var(--x),var(--y));opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<audio id="musica" autoplay loop>
+<source src="1.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PANTALLA 1 -->
+<div class="pantalla activa" id="pantalla1">
+    <h1>Maria Fernanda Flores Reto 💖</h1>
+    <h2>Felicidades, recibiste una carta</h2>
+    <div class="sobre" id="sobre">💌</div>
+    <p>Haz click en el sobre para continuar</p>
+</div>
+
+<!-- PANTALLA 2 -->
+<div class="pantalla" id="pantalla2">
+    <div class="hoja">
+        <h1>¿Quieres ser mi San Valentín? 💖</h1>
+        <button id="si">Sí</button>
+        <button id="no">No</button>
+    </div>
+</div>
+
+<!-- PANTALLA 3 -->
+<div class="pantalla" id="pantalla3">
+    <div class="hoja">
+        <div class="mensaje">
+            <h2>
+ Holi, mi amor 💖.
+¿Sabes? Mi amor, desde el día que tomamos la distancia,
+ no hubo un solo día que no dejara de pensar en ti,
+ te amo muchísimo eres increíblemente todo lo que siempre pedia en una mujer,
+ y aunque sé que nuestra relación por el momento tiene algunas dificultades y algunos problemas,
+ sé que a tu lado y todo puede salir mejor y todo puede ir bien,
+ amo la mujer que eres, te adoro y sinceramente, admiro como eres conmigo,
+ me siento orgulloso de la mujer que estás formando, porque desde el día en que te conocí has mejorado mucho,
+ dejaste de ser una niña un poco infantil e insegura y te convertiste en una mujer,
+ un poco más madura, sí, es cierto te falta madurar, así como a mí,
+ somos jóvenes, sin embargo, en esta juventud tengo algunas metas muy claras,
+ dentro de ellas una de las principales es hacerte muy feliz,
+ porque eres la mujer con la que yo deseo una vida juntos,
+ una mujer con la que yo me veo en un futuro,
+ sé que tarde o temprano todo lo que estamos haciendo nos va a afectar en el futuro,
+ por eso yo hago lo mejor y trato de dar lo mejor de mí, para ti,
+ porque sé que hacer las cosas bien como una mujer tan buena y tan linda como tú,
+ es lo correcto bueno hoy es 14 de febrero y simplemente quería agradecerte por haber llegado a mi vida,
+ por darme tanta alegría tanta felicidad cada que pienso en ti se me vienen recuerdos cálidos a la mente,
+ tus risas, tu cabello, tus ojos, tu nariz, tu sonrisa, tus labios, tú,
+ y eso es maravilloso es increíble que con solo recordar a una mujer,
+ que conozco hace muy poco, se me vengan tantos sentimientos encontrados,
+ se me vengan tantos sentimientos muy bonitos, porque podrías pensar que no son sentimientos bonitos,
+ pero son los sentimientos más hermosos, que experimento de mi vida desde que te conocí,
+ son una carga de emociones tan puras y tan honestas, que me cuesta trabajo procesarlas,
+ no porque no sepa cómo hacerlo,
+ sino porque nunca esperé que lo hiciera con una persona que ni siquiera estaba buscando,
+ llegaste a mi vida de una manera tan inusual,
+ pero tan bonita que cuando pienso en ti, Fer, es algo que quizá nunca hubiera imaginado,
+ te lo juro llegaste, y te quedaste y así espero que se quede durante mucho tiempo,
+ adoro cada detalle de ti, cuando me hablas, hasta cuando te quejas, cuando me bromeas,
+ cuando me regañas, hasta la forma en la que te preocupas por mí, como si fueras mi madre,
+ y te preocupas tanto por detalles mínimos, por ejemplo, cuando te dije que está un poco mal,
+ y tú te preocupabas, te dije que me había lesionado un poco por jugar fut, y ya querías el doctor,
+ y saber eso de ti, que te preocupas tanto por mí, me ha llenado de esperanzas, 
+ de tanta de tantas emociones, que no podría explicar, porque no sé, o sea es algo que nunca me había pasado,
+ nunca nadie se había preocupado tanto por mí como tú lo haces, y no lo haces por obligación,
+ lo haces simplemente porque tú quieres Y eso es lo más bonito que me puedes dar,
+ o sea darme tu amor de manera incondicional y es maravilloso de veras, porque para mí tú lo eres todo,
+ y aparentemente para ti yo también soy todo, bueno Fer, te quería hacer una pregunta, si... ¿El 14 de febrero, quieres que veamos unas pelis juntos, te parece bien? Bueno,
+ te espero ¿sí?💖
+            </h2>
+        </div>
+
+        <div class="imagen-romantica">
+            <img src="img.jpg">
+        </div>
+
+        <div id="teamo"></div>
+    </div>
+</div>
+
+<script>
+const musica = document.getElementById("musica");
+
+/* Forzar reproducción */
+document.addEventListener("click",()=>{
+    musica.play().catch(()=>{});
+});
+
+/* Animación sobre */
+document.getElementById("sobre").addEventListener("click",function(){
+    this.classList.add("abrir");
+    setTimeout(()=>{
+        document.getElementById("pantalla1").classList.remove("activa");
+        document.getElementById("pantalla2").classList.add("activa");
+    },900);
+});
+
+/* Botones */
+let tamañoSi = 1;
+let tamañoNo = 1;
+
+document.getElementById("no").addEventListener("click",()=>{
+    tamañoNo -= 0.2;
+    tamañoSi += 0.15;
+
+    if(tamañoNo <= 0.2){
+        document.getElementById("no").style.display="none";
+    }else{
+        document.getElementById("no").style.transform=`scale(${tamañoNo})`;
+    }
+
+    document.getElementById("si").style.transform=`scale(${tamañoSi})`;
+});
+
+document.getElementById("si").addEventListener("click",()=>{
+    document.getElementById("pantalla2").classList.remove("activa");
+    document.getElementById("pantalla3").classList.add("activa");
+    document.body.style.background="#ffd6eb";
+
+    explosionCorazones();
+    escribirTeAmo();
+});
+
+/* EXPLOSIÓN */
+function explosionCorazones(){
+    for(let i=0;i<40;i++){
+        const corazon=document.createElement("div");
+        corazon.innerHTML="💖";
+        corazon.classList.add("explosion");
+
+        const x=(Math.random()*400-200)+"px";
+        const y=(Math.random()*400-200)+"px";
+
+        corazon.style.setProperty("--x",x);
+        corazon.style.setProperty("--y",y);
+
+        corazon.style.left="50%";
+        corazon.style.top="50%";
+
+        document.body.appendChild(corazon);
+
+        setTimeout(()=>corazon.remove(),1000);
+    }
+}
+
+/* EFECTO MÁQUINA DE ESCRIBIR */
+function escribirTeAmo(){
+    const texto="TE AMO ❤️";
+    const contenedor=document.getElementById("teamo");
+    let i=0;
+
+    const intervalo=setInterval(()=>{
+        contenedor.innerHTML+=texto[i];
+        i++;
+        if(i>=texto.length){
+            clearInterval(intervalo);
+        }
+    },150);
+}
+</script>
+
+</body>
+</html>
